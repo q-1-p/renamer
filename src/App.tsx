@@ -1,6 +1,3 @@
-
 export function App() {
-  return (
-    <main>Test</main>
-  );
+  return <main class="text-red-500">Test</main>;
 }
