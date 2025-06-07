@@ -13,12 +13,15 @@
   },
   "license": "MIT",
   "dependencies": {
-    "solid-js": "^1.9.3",
+    "@tanstack/solid-router": "^1.120.17",
+    "@tanstack/solid-router-devtools": "^1.120.17",
     "@tauri-apps/api": "^2",
-    "@tauri-apps/plugin-opener": "^2"
+    "@tauri-apps/plugin-opener": "^2",
+    "solid-js": "^1.9.3"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@tanstack/router-plugin": "^1.120.18",
     "@tauri-apps/cli": "^2",
     "@unocss/preset-wind4": "^66.1.4",
     "typescript": "~5.6.2",

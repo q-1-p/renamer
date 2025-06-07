@@ -1,3 +1,4 @@
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 import UnoCSS from "unocss/vite";
 import { defineConfig } from "vite";
 import solid from "vite-plugin-solid";
@@ -7,7 +8,11 @@ const host = process.env.TAURI_DEV_HOST;
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
-  plugins: [solid(), UnoCSS()],
+  plugins: [
+    solid(),
+    UnoCSS(),
+    TanStackRouterVite({ target: "solid", autoCodeSplitting: true }),
+  ],
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   //
