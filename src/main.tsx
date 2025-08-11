@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { MenuBar } from "./components/domain/menu/menu-bar";
-import { Editor } from "./components/editor";
+import { TargetSelectSection } from "./components/domain/target/target-select-section";
 import {
   ResizableHandle,
   ResizablePanel,
@@ -25,7 +25,7 @@ function App() {
         </ResizablePanel>
         <ResizableHandle />
         <ResizablePanel>
-          <Editor />
+          <TargetSelectSection />
         </ResizablePanel>
       </ResizablePanelGroup>
     </div>
